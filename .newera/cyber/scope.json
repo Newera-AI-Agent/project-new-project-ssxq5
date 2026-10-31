@@ -1,22 +1,19 @@
 {
-  "engagement": "Authorized ethical red-team assessment of pollinations/pollinations (open source) and its deployed API surface",
-  "authorization": "User (project owner) explicitly authorizes source review, local PoC construction and low-rate verification of findings; explicitly forbids denial-of-service / load firing and forbids any PR to the upstream repo.",
-  "rules": [
-    "No volumetric/load/DoS testing against production - never fired",
-    "No destructive actions, no data exfiltration, no auth-bypass against live accounts",
-    "All PoCs proven locally against a self-hosted instance or via static/unit analysis",
-    "Production interaction limited to single low-rate requests needed to confirm a finding"
-  ],
+  "engagement": "pollinations red-team code review (authorized by repo owner brief)",
+  "authorization": "User brief states permission to find, build and test PoCs for pollinationai/pollinations. Ethical constraint: do not harm the live platform; do not run denial-of-service or load tests against production.",
   "targets": [
-    "http://localhost:8787",
-    "http://localhost:8788",
-    "http://localhost:3000",
-    "https://gen.pollinations.ai",
-    "https://text.pollinations.ai",
-    "https://image.pollinations.ai",
-    "https://media.pollinations.ai",
-    "https://enter.pollinations.ai",
-    "https://pollinations.ai"
+    "file://./pollinations (local source checkout, static analysis)",
+    "http://127.0.0.1/* (local loopback reproduction only)"
   ],
-  "in_scope_artifacts": ["pollinations/ (cloned source under review)"]
+  "out_of_scope": [
+    "gen.pollinations.ai (production) - no load/DoS testing, no unauthenticated flood",
+    "enter.pollinations.ai (production) - no load/DoS testing",
+    "media.pollinations.ai (production) - no load/DoS testing",
+    "pollinations.app (production) - no load/DoS testing",
+    "Any third-party upstream model/API endpoint",
+    "Account takeover, credential theft, data exfiltration of real user data, destructive actions"
+  ],
+  "method": "Static code review of the full checkout + local PoC execution against a local instance. Production behaviour is inferred from code paths and, where safe, single non-amplifying GET requests that do not stress the service (max a handful of requests, never a flood).",
+  "started": "2026-10-31T13:21:06Z",
+  "repo_commit": "063ac3e"
 }
