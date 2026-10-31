@@ -15,3 +15,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-31T17:05:32.773Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== root package.json'; cat package.json; echo '=== gen package.j
 - [2026-10-31T18:16:44.281Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== proxy.ts route order'; grep -n 'edgeRateLimit\|frontendKeyRat
 - [2026-10-31T19:03:19.093Z | VM 2/3] PLAN updated: 8 steps
+- [2026-10-31T19:05:53.857Z | VM 2/3] PLAN updated: 7 steps
+- [2026-10-31T19:06:18.780Z | VM 2/3] THINK: WHAT I KNOW (repo commit 8c3fbfed3718bf622c0401c14445843d99fbdce7, read-only audit): BAN CHECK MAP (repo-wide grep for isUserBanned|assertNotBanned|banned_users|BANNED_USER): - shared/auth/ban.ts:4-12 isUserBanned(user): user.banned===true && (!banExpires || banExpires>now). ban.ts:1-2 ACCOUNT_RESTRICTED_MESSAGE. - shared/auth/api-key.ts:208-217 assertNotBanned() throws BannedAccountError. 
