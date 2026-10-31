@@ -20,3 +20,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-31T19:44:41.481Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== node_modules?'; ls -d node_modules gen.pollinations.ai/node_m
 - [2026-10-31T19:54:39.558Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== additional-fields.ts'; cat -n shared/auth/additional-fields.t
 - [2026-10-31T20:17:16.583Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== proxy.ts route table'; grep -n '^\s*\.\(g
+- [2026-10-31T20:19:43.492Z | VM 2/3] RELAY checkpoint at step 153 — handoff committed, VM 3 continues.
