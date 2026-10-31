@@ -27,3 +27,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-31T20:50:23.534Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== nested git?'; ls -d pollinations/.git 2>/dev/null || echo 'no nested .git'
 - [2026-10-31T21:24:19.888Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== index.ts 200-340'; sed -n '200,340p' src/
 - [2026-10-31T22:05:21.025Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== additional-fields.ts ==='; cat -n shared/auth/additional-fiel
+- [2026-10-31T22:59:29.267Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== shared/rate-limit.ts ==='; cat -n shared/rate-limit.ts; echo 
