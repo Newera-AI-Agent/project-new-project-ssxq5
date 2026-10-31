@@ -21,3 +21,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-31T19:54:39.558Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== additional-fields.ts'; cat -n shared/auth/additional-fields.t
 - [2026-10-31T20:17:16.583Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== proxy.ts route table'; grep -n '^\s*\.\(g
 - [2026-10-31T20:19:43.492Z | VM 2/3] RELAY checkpoint at step 153 — handoff committed, VM 3 continues.
+- [2026-10-31T20:19:59.200Z | VM 3/3] boot: VM 3/3 online (job vm-mvwuhhy3-3g4wfsz7, 240 min budget, relay continuation)
+- [2026-10-31T20:19:59.201Z | VM 3/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ b1246bf; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
