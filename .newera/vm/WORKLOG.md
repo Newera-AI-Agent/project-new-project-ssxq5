@@ -29,3 +29,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-31T22:05:21.025Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== additional-fields.ts ==='; cat -n shared/auth/additional-fiel
 - [2026-10-31T22:59:29.267Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== shared/rate-limit.ts ==='; cat -n shared/rate-limit.ts; echo 
 - [2026-10-31T23:34:15.758Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen test dir ==='; ls -1 gen.pollinations.ai/test/; echo; ech
+- [2026-10-31T23:46:43.918Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== ignore check ==='; cat .gitignore 2>/dev/null; git check-ignore -v pollina
