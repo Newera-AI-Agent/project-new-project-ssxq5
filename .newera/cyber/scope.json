@@ -1,19 +1,67 @@
 {
-  "engagement": "pollinations red-team code review (authorized by repo owner brief)",
-  "authorization": "User brief states permission to find, build and test PoCs for pollinationai/pollinations. Ethical constraint: do not harm the live platform; do not run denial-of-service or load tests against production.",
+  "engagement": {
+    "name": "Pollinations AI — authorized critical-bug assessment",
+    "client": "Pollinations maintainers (task owner, holds repository access + permission to test)",
+    "authorization": "User states explicit written permission to audit, reproduce and report critical vulnerabilities in the pollinations/pollinations repository and the pollinations.app product surface.",
+    "start": "2026-10-31",
+    "rules_of_engagement": [
+      "No production DoS / load testing against live endpoints (no flooding, no high-volume amplification tests on production).",
+      "No data exfiltration, no modification of real user data, no credential use.",
+      "All PoCs are executed against a LOCAL reproduction environment (Cloudflare Workers vitest pool / wrangler local) or against production with a single, minimal, non-destructive request.",
+      "No pull requests to the upstream repository; findings are delivered as issue1.md / issue2.md in this repository only.",
+      "Only verified, attacker-triggerable, high/critical severity issues are reported; everything else is recorded as non-finding."
+    ]
+  },
   "targets": [
-    "file://./pollinations (local source checkout, static analysis)",
-    "http://127.0.0.1/* (local loopback reproduction only)"
+    {
+      "target": "pollinations/pollinations",
+      "type": "source-code",
+      "location": "local clone at ./pollinations (git @ 046d6a9 upstream snapshot)",
+      "in_scope": true
+    },
+    {
+      "target": "gen.pollinations.ai",
+      "type": "cloudflare-worker",
+      "location": "local reproduction via Cloudflare vitest workers pool (gen.pollinations.ai/test)",
+      "in_scope": true
+    },
+    {
+      "target": "enter.pollinations.ai",
+      "type": "cloudflare-worker",
+      "location": "local reproduction via Cloudflare vitest workers pool (enter.pollinations.ai/test)",
+      "in_scope": true
+    },
+    {
+      "target": "media.pollinations.ai",
+      "type": "cloudflare-worker",
+      "location": "local reproduction via Cloudflare vitest workers pool (media.pollinations.ai/test)",
+      "in_scope": true
+    },
+    {
+      "target": "https://gen.pollinations.ai",
+      "type": "live-production-host",
+      "location": "https://gen.pollinations.ai",
+      "in_scope": true,
+      "constraints": "read-only single requests only; no load, no flooding, no state change"
+    },
+    {
+      "target": "https://enter.pollinations.ai",
+      "type": "live-production-host",
+      "location": "https://enter.pollinations.ai",
+      "in_scope": true,
+      "constraints": "read-only single requests only; no load, no flooding, no state change"
+    },
+    {
+      "target": "https://media.pollinations.ai",
+      "type": "live-production-host",
+      "location": "https://media.pollinations.ai",
+      "in_scope": true,
+      "constraints": "read-only single requests only; no load, no flooding, no state change"
+    }
   ],
   "out_of_scope": [
-    "gen.pollinations.ai (production) - no load/DoS testing, no unauthenticated flood",
-    "enter.pollinations.ai (production) - no load/DoS testing",
-    "media.pollinations.ai (production) - no load/DoS testing",
-    "pollinations.app (production) - no load/DoS testing",
-    "Any third-party upstream model/API endpoint",
-    "Account takeover, credential theft, data exfiltration of real user data, destructive actions"
-  ],
-  "method": "Static code review of the full checkout + local PoC execution against a local instance. Production behaviour is inferred from code paths and, where safe, single non-amplifying GET requests that do not stress the service (max a handful of requests, never a flood).",
-  "started": "2026-10-31T13:21:06Z",
-  "repo_commit": "063ac3e"
+    "Denial-of-service or load testing against production (explicitly prohibited by the engagement rules).",
+    "Third-party SaaS providers (e.g. the upstream LLM/image providers) beyond passive observation of how the code calls them.",
+    "Social engineering, phishing, physical attacks, denial of service to any shared provider."
+  ]
 }
