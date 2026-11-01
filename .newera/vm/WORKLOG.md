@@ -72,3 +72,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T11:50:12.741Z | VM 7/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen test dir ==='; ls -1 gen.pollinations.ai/test/; echo '===
 - [2026-11-01T12:39:50.319Z | VM 7/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== node_modules? ==='; ls -d node_modules gen.pollinations.ai/no
 - [2026-11-01T12:59:22.829Z | VM 7/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen test ==='; ls -1 gen.pollinations.ai/test/; echo; echo '=
+- [2026-11-01T13:13:26.028Z | VM 7/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## media openapi handler'; sed -n '1190,1250p' media.poll
