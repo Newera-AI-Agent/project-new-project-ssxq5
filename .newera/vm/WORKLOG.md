@@ -41,3 +41,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T03:21:47.419Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== ls ==='; ls; echo '=== gen package.json ==='; cat gen.pollina
 - [2026-11-01T03:37:50.437Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== validateUserMediaUrl usages ==='; grep -rn 'validateUserMedia
 - [2026-11-01T03:40:49.639Z | VM 4/3] RELAY checkpoint at step 142 — handoff committed, VM 5 continues.
+- [2026-11-01T03:41:19.082Z | VM 5/3] boot: VM 5/3 online (job vm-mvxa8rbb-wbbixmj1, 240 min budget, relay continuation)
+- [2026-11-01T03:41:19.082Z | VM 5/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 9afd16c; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
