@@ -97,3 +97,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T20:38:12.505Z | VM 9/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### media index.ts 1-140'; sed -n '1,140p' media.pollinations.a
 - [2026-11-01T20:52:14.231Z | VM 9/3] PLAN updated: 6 steps
 - [2026-11-01T22:17:55.302Z | VM 9/3] RELAY checkpoint at step 92 — handoff committed, VM 10 continues.
+- [2026-11-01T22:18:13.298Z | VM 10/3] boot: VM 10/3 online (job vm-mvye5chj-tw3arr2p, 240 min budget, relay continuation)
+- [2026-11-01T22:18:13.299Z | VM 10/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 68df3e1; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
