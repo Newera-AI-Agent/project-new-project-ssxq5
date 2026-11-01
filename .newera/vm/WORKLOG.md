@@ -82,3 +82,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T15:35:23.963Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen vitest.config.ts ==='; cat gen.pollinations.ai/vitest.con
 - [2026-11-01T15:35:39.961Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && for f in work/scratch/*/notes.md; do echo "########## $f"; cat "$f"; echo; done; ech
 - [2026-11-01T15:39:40.052Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== pool workers installed? ==='; ls -d node_modules/vitest-pool-
+- [2026-11-01T16:07:01.091Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## wrangler/vitest availability'; ls node_modules/.bin/ |
