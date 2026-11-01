@@ -86,3 +86,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T16:29:53.437Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '########## inner git status'; git -C pollinations status --short | head -20; g
 - [2026-11-01T17:16:01.477Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## gen index.ts 232-345'; sed -n '232,345p' gen.pollinati
 - [2026-11-01T17:54:20.234Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## gen test dir'; ls -1 gen.pollinations.ai/test/; echo '
+- [2026-11-01T18:23:01.414Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen index.ts 1-60 ==='; sed -n '1,60p' gen.pollinations.ai/sr
