@@ -88,3 +88,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T17:54:20.234Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## gen test dir'; ls -1 gen.pollinations.ai/test/; echo '
 - [2026-11-01T18:23:01.414Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen index.ts 1-60 ==='; sed -n '1,60p' gen.pollinations.ai/sr
 - [2026-11-01T18:30:00.023Z | VM 8/3] RELAY checkpoint at step 96 — handoff committed, VM 9 continues.
+- [2026-11-01T18:30:19.103Z | VM 9/3] boot: VM 9/3 online (job vm-mvy608rc-dkcsqdpj, 240 min budget, relay continuation)
+- [2026-11-01T18:30:19.103Z | VM 9/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 2d060d7; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
