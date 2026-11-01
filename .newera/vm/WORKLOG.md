@@ -63,3 +63,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T09:07:54.386Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== root ls ==='; ls; echo '=== node_modules? ==='; ls -d node_mo
 - [2026-11-01T10:29:06.105Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen wrangler.toml ==='; cat -n gen.pollinations.ai/wrangler.t
 - [2026-11-01T11:00:00.381Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== test dir ==='; ls -1 test/; echo '=== vit
+- [2026-11-01T11:06:12.274Z | VM 6/3] RELAY checkpoint at step 120 — handoff committed, VM 7 continues.

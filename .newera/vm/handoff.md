@@ -1,3 +1,7 @@
+# RELAY HANDOFF — job vm-mvxi9isu-ysg4ucff (VM 6 of 3)
+Written at the 15-minute checkpoint with 13 min left, after 120 steps.
+
+## Original task
 # RELAY HANDOFF — job vm-mvxa8rbb-wbbixmj1 (VM 5 of 3)
 Written at the 15-minute checkpoint with 10 min left, after 116 steps.
 
@@ -308,23 +312,12 @@ ec1ed12 cloud status: step 120
 ## Progress so far
 (no rolling summary was generated — reconstruct state from the git log below and the repo itself)
 
-## Worklog (latest lines — every VM in this chain appended)
-Durable session memory for this VM job chain. Each line is one step or wind-down from one VM. Read it on boot; never delete it.
-- [
+## Worklog (latest lines — every VM in this cha
 
 ## Progress so far
 (no rolling summary was generated — reconstruct state from the git log below and the repo itself)
 
 ## Worklog (latest lines — every VM in this chain appended)
-- [2026-10-31T19:03:19.093Z | VM 2/3] PLAN updated: 8 steps
-- [2026-10-31T19:05:53.857Z | VM 2/3] PLAN updated: 7 steps
-- [2026-10-31T19:06:18.780Z | VM 2/3] THINK: WHAT I KNOW (repo commit 8c3fbfed3718bf622c0401c14445843d99fbdce7, read-only audit): BAN CHECK MAP (repo-wide grep for isUserBanned|assertNotBanned|banned_users|BANNED_USER): - shared/auth/ban.ts:4-12 isUserBanned(user): user.banned===true && (!banExpires || banExpires>now). ban.ts:1-2 ACCOUNT_RESTRICTED_MESSAGE. - shared/auth/api-key.ts:208-217 assertNotBanned() throws BannedAccountError. 
-- [2026-10-31T19:44:41.481Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== node_modules?'; ls -d node_modules gen.pollinations.ai/node_m
-- [2026-10-31T19:54:39.558Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== additional-fields.ts'; cat -n shared/auth/additional-fields.t
-- [2026-10-31T20:17:16.583Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== proxy.ts route table'; grep -n '^\s*\.\(g
-- [2026-10-31T20:19:43.492Z | VM 2/3] RELAY checkpoint at step 153 — handoff committed, VM 3 continues.
-- [2026-10-31T20:19:59.200Z | VM 3/3] boot: VM 3/3 online (job vm-mvwuhhy3-3g4wfsz7, 240 min budget, relay continuation)
-- [2026-10-31T20:19:59.201Z | VM 3/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ b1246bf; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
 - [2026-10-31T20:24:18.133Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && du -sh .git . 2>/dev/null; echo '=== root package.json'; head -60 packa
 - [2026-10-31T20:50:23.534Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== nested git?'; ls -d pollinations/.git 2>/dev/null || echo 'no nested .git'
 - [2026-10-31T21:24:19.888Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== index.ts 200-340'; sed -n '200,340p' src/
@@ -356,37 +349,47 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T06:11:18.112Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== index.ts 140-end ==='; sed -n '140,400p' 
 - [2026-11-01T07:07:15.219Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== enter test dir ==='; ls -1 enter.pollinations.ai/test/ 2>/dev
 - [2026-11-01T07:18:57.967Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== shared/rate-limit.ts ==='; cat -n shared/rate-limit.ts; echo 
+- [2026-11-01T07:25:22.328Z | VM 5/3] RELAY checkpoint at step 116 — handoff committed, VM 6 continues.
+- [2026-11-01T07:25:37.704Z | VM 6/3] boot: VM 6/3 online (job vm-mvxi9isu-ysg4ucff, 240 min budget, relay continuation)
+- [2026-11-01T07:25:37.705Z | VM 6/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 9423b8b; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
+- [2026-11-01T07:31:19.886Z | VM 6/3] PLAN updated: 7 steps
+- [2026-11-01T08:19:56.023Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== proxy.ts ==='; cat -n src/routes/proxy.ts
+- [2026-11-01T08:52:16.467Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen package.json scripts ==='; python3 -c "import json;print(
+- [2026-11-01T09:07:54.386Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== root ls ==='; ls; echo '=== node_modules? ==='; ls -d node_mo
+- [2026-11-01T10:29:06.105Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen wrangler.toml ==='; cat -n gen.pollinations.ai/wrangler.t
+- [2026-11-01T11:00:00.381Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== test dir ==='; ls -1 test/; echo '=== vit
 
 ## Repository state
 Changed/added files:
 (clean tree)
 
 Recent commits:
-9d77097 cloud status: step 118
-8164064 cloud status: step 118
-fd2718d cloud status: step 117
-1a8a382 cloud status: step 116
-ef8a6e9 cloud status: step 115
-57ccfa5 cloud status: step 114
-2d9ff9f cloud status: step 112
-2ed13bd cloud status: step 112
-40bdf38 cloud status: step 112
-94adc02 cloud status: step 108
-e47544a cloud status: step 107
-6307d73 cloud status: step 107
-e89de56 cloud status: step 107
-17b7998 cloud status: step 106
-82d9014 cloud status: step 105
+27ce071 cloud status: step 121
+8d88807 cloud status: step 120
+811dc47 cloud status: step 120
+f0e5c26 cloud status: step 118
+3139ae5 cloud status: step 118
+bf5466c cloud status: step 117
+0f44362 cloud status: step 117
+f735b7d cloud status: step 115
+80aae03 cloud status: step 115
+052de67 cloud status: step 113
+cf03603 cloud status: step 113
+707153a cloud status: step 113
+e55f7a3 cloud status: step 112
+3c58aa8 cloud status: step 111
+d194bdf cloud status: step 111
 
 ## Current plan (todo state)
-## CURRENT PLAN (6 steps)
-1. [~] Settle + prove ban-bypass candidate: are banned/banExpires exposed via better-auth additio (req banned-user-bypass)  <- NOW
-2. [ ] Prove unauthenticated amplification DoS: gen /openapi.json + /docs/open-api/generate-schem (req critical-dos)
-3. [ ] Audit + verify remaining unauth expensive/SSRF surfaces: gen/src/sites.ts hosted-site bypa (req critical-ssrf)
-4. [ ] Write PoC scripts + issue1.md + issue2.md (verified evidence, severity, remediation, safe  (req report)
-5. [ ] Write WORKLOG.md + .newera/cyber/engagement-report.md (scope, methodology, verified findin (req worklog)
-6. [ ] Final verification: gen/enter vitest suites green, PoCs re-run from scratch, deliverables  (req build-green)
-0/6 steps done
+## CURRENT PLAN (7 steps)
+1. [~] Restore upstream source + deps; re-establish audit baseline (verify commit 799dadac) (req understand codebase end-to-end)  <- NOW
+2. [ ] Settle + prove ban-bypass: better-auth additionalFields exposure + direct getSession() rou (req banned-user-bypass)
+3. [ ] Prove unauthenticated amplification DoS: gen /openapi.json + /docs fan-out, media /openapi (req critical-dos)
+4. [ ] Audit remaining unauth expensive/SSRF surfaces (sites.ts, register, media GET, x402) (req critical-ssrf)
+5. [ ] Write runnable PoC scripts + issue1.md + issue2.md (verified evidence, severity, remediati (req report)
+6. [ ] Write WORKLOG.md + .newera/cyber/engagement-report.md (scope, methodology, findings) (req worklog)
+7. [ ] Final verification: install, run gen/enter vitest suites green, re-run PoCs from scratch (req build-green)
+0/7 steps done
 
 ## Contract status
 (no task contract on this job)
