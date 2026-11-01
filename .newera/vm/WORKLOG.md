@@ -54,3 +54,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T06:11:18.112Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== index.ts 140-end ==='; sed -n '140,400p' 
 - [2026-11-01T07:07:15.219Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== enter test dir ==='; ls -1 enter.pollinations.ai/test/ 2>/dev
 - [2026-11-01T07:18:57.967Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== shared/rate-limit.ts ==='; cat -n shared/rate-limit.ts; echo 
+- [2026-11-01T07:25:22.328Z | VM 5/3] RELAY checkpoint at step 116 — handoff committed, VM 6 continues.
