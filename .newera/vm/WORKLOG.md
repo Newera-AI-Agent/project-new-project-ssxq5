@@ -52,3 +52,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T05:09:08.748Z | VM 5/3] PLAN updated: 6 steps
 - [2026-11-01T05:31:57.995Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== scratch dirs ==='; ls work/scratch/; for f in work/scratch/*/notes.md; do 
 - [2026-11-01T06:11:18.112Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== index.ts 140-end ==='; sed -n '140,400p' 
+- [2026-11-01T07:07:15.219Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== enter test dir ==='; ls -1 enter.pollinations.ai/test/ 2>/dev
