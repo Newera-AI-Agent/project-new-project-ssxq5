@@ -40,3 +40,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T01:49:23.695Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen test dir ==='; ls -1 gen.pollinations.ai/test/; echo; ech
 - [2026-11-01T03:21:47.419Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== ls ==='; ls; echo '=== gen package.json ==='; cat gen.pollina
 - [2026-11-01T03:37:50.437Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== validateUserMediaUrl usages ==='; grep -rn 'validateUserMedia
+- [2026-11-01T03:40:49.639Z | VM 4/3] RELAY checkpoint at step 142 — handoff committed, VM 5 continues.
