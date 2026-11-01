@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+dist/
+build/
+.next/
+.cache/
+coverage/
+*.log
+.DS_Store
+packages/sdk/dist/
+packages/mcp/dist/
