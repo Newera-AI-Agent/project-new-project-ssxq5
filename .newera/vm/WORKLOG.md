@@ -55,3 +55,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T07:07:15.219Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== enter test dir ==='; ls -1 enter.pollinations.ai/test/ 2>/dev
 - [2026-11-01T07:18:57.967Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== shared/rate-limit.ts ==='; cat -n shared/rate-limit.ts; echo 
 - [2026-11-01T07:25:22.328Z | VM 5/3] RELAY checkpoint at step 116 — handoff committed, VM 6 continues.
+- [2026-11-01T07:25:37.704Z | VM 6/3] boot: VM 6/3 online (job vm-mvxi9isu-ysg4ucff, 240 min budget, relay continuation)
+- [2026-11-01T07:25:37.705Z | VM 6/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 9423b8b; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
