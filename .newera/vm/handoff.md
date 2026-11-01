@@ -1,3 +1,7 @@
+# RELAY HANDOFF — job vm-mvwuhhy3-3g4wfsz7 (VM 3 of 3)
+Written at the 15-minute checkpoint with 13 min left, after 146 steps.
+
+## Original task
 # RELAY HANDOFF — job vm-mvwmlm9z-wuhyrwyu (VM 2 of 3)
 Written at the 15-minute checkpoint with 13 min left, after 153 steps.
 
@@ -189,6 +193,86 @@ f1aa103 cloud status: step 146
 3f5e7c7 cloud status: step 137
 54f3f48 cloud status: step 134
 af96ef7 cloud status: step 133
+
+## Current plan (todo state)
+## CURRENT PLAN (7 steps)
+1. [~] Re-verify ban enforcement end-to-end (api-key/session/agent-run/x402/sites) and decide pas (req banned-user-bypass)  <- NOW
+2. [ ] Verify unauthenticated amplification DoS (gen /openapi.json + /docs -> media/enter fetch c (req critical-dos)
+3. [ ] Verify unauthenticated community-model /register SSRF in local env (req critical-ssrf)
+4. [ ] Audit remaining unauthenticated expensive surfaces (media openapi, gen sites, enter public (req critical-dos)
+5. [ ] Write issue1.md and issue2.md with verified evidence, severity, remediation, PoC (req report)
+6. [ ] Write WORKLOG.md + .newera/cyber engagement report (scope/methodology/findings) (req worklog)
+7. [ ] Final verification: repo build/tests green, deliverables present (req build-green)
+0/7 steps done
+
+## Contract status
+(no task contract on this job)
+
+## Loaded skills (cyber ledger — re-load if your context lost them)
+(no skills loaded)
+
+## What the next VM must do
+1. Check the repo state above — everything committed so far is real and on disk.
+2. Do NOT redo finished work. Verify what exists (build, tests) before touching anything.
+3. Continue the ORIGINAL task to completion, then finish with an honest summary.
+4. If a deploy was requested and the build is green, make sure request_deploy was called (see .newera/vm/deploy-request.json).
+
+## Progress so far
+(no rolling summary was generated — reconstruct state from the git log below and the repo itself)
+
+## Worklog (latest lines — every VM in this chain appended)
+# VM Agent Worklog
+Durable session memory for this VM job chain. Each line is one step or wind-down from one VM. Read it on boot; never delete it.
+- [2026-10-31T12:59:34.560Z | VM 1/3] boot: VM 1/3 online (job vm-mvwer24z-yp8a3qdy, 240 min budget)
+- [2026-10-31T12:59:34.560Z | VM 1/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 046d6a9; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
+- [2026-10-31T13:05:39.669Z | VM 1/3] PLAN updated: 8 steps
+- [2026-10-31T14:04:06.691Z | VM 1/3] VERIFIED green: cd pollinations; echo '===== gen test dir'; ls -1 gen.pollinations.ai/test/ 2>/dev/null; echo '--- gen vitest config'; cat gen.pollinations.ai/vitest.config.ts 
+- [2026-10-31T14:14:24.289Z | VM 1/3] VERIFIED green: cd pollinations; python3 -c "import json;d=json.load(open('gen.pollinations.ai/package.json'));print(d['name'])"; python3 -c "import json;d=json.load(open('pack
+- [2026-10-31T14:49:01.260Z | VM 1/3] VERIFIED green: cd pollinations && echo '=== root package.json'; cat package.json; echo '=== gen package.json'; cat gen.pollinations.ai/package.json; echo '=== vitest configs';
+- [2026-10-31T15:38:39.979Z | VM 1/3] VERIFIED green: cd pollinations && echo '=== gen/middleware'; ls gen.pollinations.ai/src/middleware; echo '=== gen/docs'; find gen.pollinations.ai/src/docs gen.pollinations.ai/
+- [2026-10-31T16:38:59.025Z | VM 1/3] RELAY checkpoint at step 109 — handoff committed, VM 2 continues.
+- [2026-10-31T16:39:11.266Z | VM 2/3] boot: VM 2/3 online (job vm-mvwmlm9z-wuhyrwyu, 240 min budget, relay continuation)
+- [2026-10-31T16:39:11.267Z | VM 2/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 39d6068; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
+- [2026-10-31T16:41:40.736Z | VM 2/3] PLAN updated: 8 steps
+- [2026-10-31T17:05:32.773Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== root package.json'; cat package.json; echo '=== gen package.j
+- [2026-10-31T18:16:44.281Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== proxy.ts route order'; grep -n 'edgeRateLimit\|frontendKeyRat
+- [2026-10-31T19:03:19.093Z | VM 2/3] PLAN updated: 8 steps
+- [2026-10-31T19:05:53.857Z | VM 2/3] PLAN updated: 7 steps
+- [2026-10-31T19:06:18.780Z | VM 2/3] THINK: WHAT I KNOW (repo commit 8c3fbfed3718bf622c0401c14445843d99fbdce7, read-only audit): BAN CHECK MAP (repo-wide grep for isUserBanned|assertNotBanned|banned_users|BANNED_USER): - shared/auth/ban.ts:4-12 isUserBanned(user): user.banned===true && (!banExpires || banExpires>now). ban.ts:1-2 ACCOUNT_RESTRICTED_MESSAGE. - shared/auth/api-key.ts:208-217 assertNotBanned() throws BannedAccountError. 
+- [2026-10-31T19:44:41.481Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== node_modules?'; ls -d node_modules gen.pollinations.ai/node_m
+- [2026-10-31T19:54:39.558Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== additional-fields.ts'; cat -n shared/auth/additional-fields.t
+- [2026-10-31T20:17:16.583Z | VM 2/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== proxy.ts route table'; grep -n '^\s*\.\(g
+- [2026-10-31T20:19:43.492Z | VM 2/3] RELAY checkpoint at step 153 — handoff committed, VM 3 continues.
+- [2026-10-31T20:19:59.200Z | VM 3/3] boot: VM 3/3 online (job vm-mvwuhhy3-3g4wfsz7, 240 min budget, relay continuation)
+- [2026-10-31T20:19:59.201Z | VM 3/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ b1246bf; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
+- [2026-10-31T20:24:18.133Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && du -sh .git . 2>/dev/null; echo '=== root package.json'; head -60 packa
+- [2026-10-31T20:50:23.534Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== nested git?'; ls -d pollinations/.git 2>/dev/null || echo 'no nested .git'
+- [2026-10-31T21:24:19.888Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== index.ts 200-340'; sed -n '200,340p' src/
+- [2026-10-31T22:05:21.025Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== additional-fields.ts ==='; cat -n shared/auth/additional-fiel
+- [2026-10-31T22:59:29.267Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== shared/rate-limit.ts ==='; cat -n shared/rate-limit.ts; echo 
+- [2026-10-31T23:34:15.758Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen test dir ==='; ls -1 gen.pollinations.ai/test/; echo; ech
+- [2026-10-31T23:46:43.918Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== ignore check ==='; cat .gitignore 2>/dev/null; git check-ignore -v pollina
+
+## Repository state
+Changed/added files:
+(clean tree)
+
+Recent commits:
+6a389e8 cloud status: step 146
+f619962 cloud status: step 145
+668b316 cloud status: step 144
+0875adf cloud status: step 141
+a0a9165 cloud status: step 140
+60582c6 cloud status: step 140
+2b57c83 cloud status: step 139
+7094f0d cloud status: step 139
+3148e04 cloud status: step 138
+302a25b cloud status: step 133
+7fcc00d cloud status: step 129
+8d19d09 cloud status: step 126
+ae732c4 cloud status: step 126
+8456f1b cloud status: step 121
+ec1ed12 cloud status: step 120
 
 ## Current plan (todo state)
 ## CURRENT PLAN (7 steps)
