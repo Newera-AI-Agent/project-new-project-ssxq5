@@ -1,3 +1,7 @@
+# RELAY HANDOFF — job vm-mvxy17u8-5an1yxsv (VM 8 of 3)
+Written at the 15-minute checkpoint with 11 min left, after 96 steps.
+
+## Original task
 # RELAY HANDOFF — job vm-mvxq5it1-mfzhtlbc (VM 7 of 3)
 Written at the 15-minute checkpoint with 14 min left, after 113 steps.
 
@@ -311,28 +315,12 @@ ec1ed12 cloud status: step 120
 1. Check the repo state above — everything committed so far is real and on disk.
 2. Do NOT redo finished work. Verify what exists (build, tests) before touching anything.
 3. Continue the ORIGINAL task to completion, then finish with an honest summary.
-4. If a deploy was requested and the build is green, make sure request_deploy was called (see .newera/vm/deploy-request.json).
-
-## Progress so far
-(n
+4. If
 
 ## Progress so far
 (no rolling summary was generated — reconstruct state from the git log below and the repo itself)
 
 ## Worklog (latest lines — every VM in this chain appended)
-- [2026-11-01T00:36:33.387Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== edgeRateLimit usage in index.ts ==='; grep -n 'edgeRateLimit\
-- [2026-11-01T01:00:15.917Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== node_modules? ==='; ls -d node_modules gen.pollinations.ai/no
-- [2026-11-01T01:30:12.448Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== SSRF guard greps ==='; grep -rn 'isPrivateIp\|private-ip\|127
-- [2026-11-01T01:49:23.695Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen test dir ==='; ls -1 gen.pollinations.ai/test/; echo; ech
-- [2026-11-01T03:21:47.419Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== ls ==='; ls; echo '=== gen package.json ==='; cat gen.pollina
-- [2026-11-01T03:37:50.437Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== validateUserMediaUrl usages ==='; grep -rn 'validateUserMedia
-- [2026-11-01T03:40:49.639Z | VM 4/3] RELAY checkpoint at step 142 — handoff committed, VM 5 continues.
-- [2026-11-01T03:41:19.082Z | VM 5/3] boot: VM 5/3 online (job vm-mvxa8rbb-wbbixmj1, 240 min budget, relay continuation)
-- [2026-11-01T03:41:19.082Z | VM 5/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 9afd16c; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
-- [2026-11-01T03:45:54.984Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen package.json ==='; cat gen.pollinations.ai/package.json; 
-- [2026-11-01T03:47:15.281Z | VM 5/3] PLAN updated: 8 steps
-- [2026-11-01T04:11:20.510Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== vitest config ==='; cat vitest.config.ts;
-- [2026-11-01T04:18:58.398Z | VM 5/3] PLAN updated: 8 steps
 - [2026-11-01T04:30:38.659Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== ls test ==='; ls -la test/; echo '=== vit
 - [2026-11-01T05:00:57.480Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== outer tracked files (full) ==='; git ls-files; echo '=== outer status igno
 - [2026-11-01T05:09:08.748Z | VM 5/3] PLAN updated: 6 steps
@@ -360,37 +348,50 @@ ec1ed12 cloud status: step 120
 - [2026-11-01T12:59:22.829Z | VM 7/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen test ==='; ls -1 gen.pollinations.ai/test/; echo; echo '=
 - [2026-11-01T13:13:26.028Z | VM 7/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## media openapi handler'; sed -n '1190,1250p' media.poll
 - [2026-11-01T13:38:52.625Z | VM 7/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## gen openapi/docs files'; grep -rln 'openapi' gen.polli
+- [2026-11-01T14:46:48.230Z | VM 7/3] RELAY checkpoint at step 113 — handoff committed, VM 8 continues.
+- [2026-11-01T14:47:02.879Z | VM 8/3] boot: VM 8/3 online (job vm-mvxy17u8-5an1yxsv, 240 min budget, relay continuation)
+- [2026-11-01T14:47:02.880Z | VM 8/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ a6d03a0; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
+- [2026-11-01T14:50:36.134Z | VM 8/3] PLAN updated: 7 steps
+- [2026-11-01T15:08:50.739Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen vitest.config.ts ==='; cat gen.pollinations.ai/vitest.con
+- [2026-11-01T15:35:23.963Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen vitest.config.ts ==='; cat gen.pollinations.ai/vitest.con
+- [2026-11-01T15:35:39.961Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && for f in work/scratch/*/notes.md; do echo "########## $f"; cat "$f"; echo; done; ech
+- [2026-11-01T15:39:40.052Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== pool workers installed? ==='; ls -d node_modules/vitest-pool-
+- [2026-11-01T16:07:01.091Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## wrangler/vitest availability'; ls node_modules/.bin/ |
+- [2026-11-01T16:29:53.437Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '########## inner git status'; git -C pollinations status --short | head -20; g
+- [2026-11-01T17:16:01.477Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## gen index.ts 232-345'; sed -n '232,345p' gen.pollinati
+- [2026-11-01T17:54:20.234Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## gen test dir'; ls -1 gen.pollinations.ai/test/; echo '
+- [2026-11-01T18:23:01.414Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen index.ts 1-60 ==='; sed -n '1,60p' gen.pollinations.ai/sr
 
 ## Repository state
 Changed/added files:
 (clean tree)
 
 Recent commits:
-e0210b0 cloud status: step 113
-115fac7 cloud status: step 113
-8d8ac64 cloud status: step 111
-3090579 cloud status: step 111
-a017e68 cloud status: step 110
-ce9c976 cloud status: step 110
-6dfaf2a cloud status: step 109
-f06d531 cloud status: step 108
-48f8e7f cloud status: step 107
-2969616 cloud status: step 107
-4044d5c cloud status: step 105
-9e32ab9 cloud status: step 105
-e7fdd85 cloud status: step 104
-a1fa166 cloud status: step 104
-071f57b cloud status: step 103
+77dbf59 cloud status: step 95
+e4ab220 cloud status: step 95
+34cc1b3 cloud status: step 95
+f577cb2 cloud status: step 94
+49b0376 cloud status: step 93
+b5adcdd cloud status: step 93
+8ac8b92 cloud status: step 93
+fbaa2db cloud status: step 91
+470edd3 cloud status: step 89
+30e43bd cloud status: step 88
+ca03e52 cloud status: step 88
+72aa5d8 cloud status: step 87
+0819583 cloud status: step 86
+d4571bc cloud status: step 86
+b9af0c8 cloud status: step 85
 
 ## Current plan (todo state)
 ## CURRENT PLAN (7 steps)
-1. [~] Restore upstream source + deps; re-establish audit baseline (verify commit 799dadac) (req understand codebase end-to-end)  <- NOW
-2. [ ] Settle + prove ban-bypass: better-auth additionalFields exposure + direct getSession() rou (req banned-user-bypass)
-3. [ ] Prove unauthenticated amplification DoS: gen /openapi.json + /docs fan-out, media /openapi (req critical-dos)
-4. [ ] Audit remaining unauth expensive/SSRF surfaces (sites.ts, register, media GET, x402) (req critical-ssrf)
-5. [ ] Write runnable PoC scripts + issue1.md + issue2.md (verified evidence, severity, remediati (req report)
+1. [~] Restore upstream source + deps; re-establish audit baseline (HEAD e2ac54b) (req understand codebase end-to-end)  <- NOW
+2. [ ] Prove ban-bypass end-to-end with runnable PoC (additionalFields exposure + getSession() ro (req banned-user-bypass)
+3. [ ] Prove unauthenticated amplification DoS with runnable PoC (gen /openapi.json + /docs fan-o (req critical-dos)
+4. [ ] Audit + prove remaining unauth expensive/SSRF surfaces (sites.ts, register, media GET, x40 (req critical-ssrf)
+5. [ ] Write PoC scripts + issue1.md + issue2.md (verified evidence, severity, remediation) (req report)
 6. [ ] Write WORKLOG.md + .newera/cyber/engagement-report.md (scope, methodology, findings) (req worklog)
-7. [ ] Final verification: install, run gen/enter vitest suites green, re-run PoCs from scratch (req build-green)
+7. [ ] Final verification: npm install, run gen/enter vitest suites green, re-run PoCs from scrat (req build-green)
 0/7 steps done
 
 ## Contract status
