@@ -1,3 +1,7 @@
+# RELAY HANDOFF — job vm-mvy608rc-dkcsqdpj (VM 9 of 3)
+Written at the 15-minute checkpoint with 6 min left, after 92 steps.
+
+## Original task
 # RELAY HANDOFF — job vm-mvxy17u8-5an1yxsv (VM 8 of 3)
 Written at the 15-minute checkpoint with 11 min left, after 96 steps.
 
@@ -313,23 +317,12 @@ ec1ed12 cloud status: step 120
 
 ## What the next VM must do
 1. Check the repo state above — everything committed so far is real and on disk.
-2. Do NOT redo finished work. Verify what exists (build, tests) before touching anything.
-3. Continue the ORIGINAL task to completion, then finish with an honest summary.
-4. If
+2. Do NOT redo finished work. Ver
 
 ## Progress so far
 (no rolling summary was generated — reconstruct state from the git log below and the repo itself)
 
 ## Worklog (latest lines — every VM in this chain appended)
-- [2026-11-01T04:30:38.659Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== ls test ==='; ls -la test/; echo '=== vit
-- [2026-11-01T05:00:57.480Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== outer tracked files (full) ==='; git ls-files; echo '=== outer status igno
-- [2026-11-01T05:09:08.748Z | VM 5/3] PLAN updated: 6 steps
-- [2026-11-01T05:31:57.995Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== scratch dirs ==='; ls work/scratch/; for f in work/scratch/*/notes.md; do 
-- [2026-11-01T06:11:18.112Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== index.ts 140-end ==='; sed -n '140,400p' 
-- [2026-11-01T07:07:15.219Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== enter test dir ==='; ls -1 enter.pollinations.ai/test/ 2>/dev
-- [2026-11-01T07:18:57.967Z | VM 5/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== shared/rate-limit.ts ==='; cat -n shared/rate-limit.ts; echo 
-- [2026-11-01T07:25:22.328Z | VM 5/3] RELAY checkpoint at step 116 — handoff committed, VM 6 continues.
-- [2026-11-01T07:25:37.704Z | VM 6/3] boot: VM 6/3 online (job vm-mvxi9isu-ysg4ucff, 240 min budget, relay continuation)
 - [2026-11-01T07:25:37.705Z | VM 6/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 9423b8b; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
 - [2026-11-01T07:31:19.886Z | VM 6/3] PLAN updated: 7 steps
 - [2026-11-01T08:19:56.023Z | VM 6/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations/gen.pollinations.ai && echo '=== proxy.ts ==='; cat -n src/routes/proxy.ts
@@ -361,38 +354,46 @@ ec1ed12 cloud status: step 120
 - [2026-11-01T17:16:01.477Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## gen index.ts 232-345'; sed -n '232,345p' gen.pollinati
 - [2026-11-01T17:54:20.234Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## gen test dir'; ls -1 gen.pollinations.ai/test/; echo '
 - [2026-11-01T18:23:01.414Z | VM 8/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen index.ts 1-60 ==='; sed -n '1,60p' gen.pollinations.ai/sr
+- [2026-11-01T18:30:00.023Z | VM 8/3] RELAY checkpoint at step 96 — handoff committed, VM 9 continues.
+- [2026-11-01T18:30:19.103Z | VM 9/3] boot: VM 9/3 online (job vm-mvy608rc-dkcsqdpj, 240 min budget, relay continuation)
+- [2026-11-01T18:30:19.103Z | VM 9/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 2d060d7; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
+- [2026-11-01T18:41:26.388Z | VM 9/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### root pkg'; head -60 package.json; echo '##### lockfiles'; l
+- [2026-11-01T19:26:01.163Z | VM 9/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '##### outer tracked files under pollinations/'; git ls-files pollinations | he
+- [2026-11-01T19:27:16.526Z | VM 9/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '##### git ls-files -s'; git ls-files -s | head -20; echo '##### outer .gitigno
+- [2026-11-01T20:36:16.533Z | VM 9/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### gen vitest.config.ts'; cat gen.pollinations.ai/vitest.confi
+- [2026-11-01T20:38:12.505Z | VM 9/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### media index.ts 1-140'; sed -n '1,140p' media.pollinations.a
+- [2026-11-01T20:52:14.231Z | VM 9/3] PLAN updated: 6 steps
 
 ## Repository state
 Changed/added files:
 (clean tree)
 
 Recent commits:
-77dbf59 cloud status: step 95
-e4ab220 cloud status: step 95
-34cc1b3 cloud status: step 95
-f577cb2 cloud status: step 94
-49b0376 cloud status: step 93
-b5adcdd cloud status: step 93
-8ac8b92 cloud status: step 93
-fbaa2db cloud status: step 91
-470edd3 cloud status: step 89
-30e43bd cloud status: step 88
-ca03e52 cloud status: step 88
-72aa5d8 cloud status: step 87
-0819583 cloud status: step 86
-d4571bc cloud status: step 86
-b9af0c8 cloud status: step 85
+cddd41f cloud status: step 92
+b794e11 cloud status: step 92
+9121877 cloud status: step 92
+ad57609 cloud status: step 92
+a9d95ec cloud status: step 92
+e9a9f9d cloud status: step 92
+9402342 cloud status: step 91
+84a6f84 cloud status: step 89
+6f6fbe5 cloud status: step 89
+9387adb cloud status: step 89
+5be170b cloud status: step 87
+23ea080 cloud status: step 87
+882b7aa cloud status: step 87
+a2f2957 cloud status: step 87
+9720125 cloud status: step 86
 
 ## Current plan (todo state)
-## CURRENT PLAN (7 steps)
-1. [~] Restore upstream source + deps; re-establish audit baseline (HEAD e2ac54b) (req understand codebase end-to-end)  <- NOW
-2. [ ] Prove ban-bypass end-to-end with runnable PoC (additionalFields exposure + getSession() ro (req banned-user-bypass)
-3. [ ] Prove unauthenticated amplification DoS with runnable PoC (gen /openapi.json + /docs fan-o (req critical-dos)
-4. [ ] Audit + prove remaining unauth expensive/SSRF surfaces (sites.ts, register, media GET, x40 (req critical-ssrf)
-5. [ ] Write PoC scripts + issue1.md + issue2.md (verified evidence, severity, remediation) (req report)
-6. [ ] Write WORKLOG.md + .newera/cyber/engagement-report.md (scope, methodology, findings) (req worklog)
-7. [ ] Final verification: npm install, run gen/enter vitest suites green, re-run PoCs from scrat (req build-green)
-0/7 steps done
+## CURRENT PLAN (6 steps)
+1. [~] Read decisive code: api-key ban path + enter key-verify response + rate-limit middleware o (req understand codebase end-to-end)  <- NOW
+2. [ ] Prove finding #1 (banned-user API-key bypass) end-to-end with a runnable PoC in the local  (req banned-user-bypass)
+3. [ ] Prove finding #2 (unauthenticated OpenAPI amplification DoS) end-to-end with a runnable Po (req critical-dos)
+4. [ ] Write PoC scripts + issue1.md + issue2.md into the OUTER tracked repo root (and mirror int (req report)
+5. [ ] Write WORKLOG.md + .newera/cyber/engagement-report.md (scope, methodology, findings, ethic (req worklog)
+6. [ ] Final verification: npm install, run gen/enter vitest suites + PoCs green from a clean sta (req build-green)
+0/6 steps done
 
 ## Contract status
 (no task contract on this job)
