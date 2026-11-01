@@ -31,3 +31,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-10-31T23:34:15.758Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen test dir ==='; ls -1 gen.pollinations.ai/test/; echo; ech
 - [2026-10-31T23:46:43.918Z | VM 3/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== ignore check ==='; cat .gitignore 2>/dev/null; git check-ignore -v pollina
 - [2026-11-01T00:01:03.893Z | VM 3/3] RELAY checkpoint at step 146 — handoff committed, VM 4 continues.
+- [2026-11-01T00:01:23.037Z | VM 4/3] boot: VM 4/3 online (job vm-mvx2e57f-j0wgrc0a, 240 min budget, relay continuation)
+- [2026-11-01T00:01:23.037Z | VM 4/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ b63852b; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
