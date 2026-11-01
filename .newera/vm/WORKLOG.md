@@ -36,3 +36,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T00:11:52.141Z | VM 4/3] PLAN updated: 7 steps
 - [2026-11-01T00:36:33.387Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== edgeRateLimit usage in index.ts ==='; grep -n 'edgeRateLimit\
 - [2026-11-01T01:00:15.917Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== node_modules? ==='; ls -d node_modules gen.pollinations.ai/no
+- [2026-11-01T01:30:12.448Z | VM 4/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== SSRF guard greps ==='; grep -rn 'isPrivateIp\|private-ip\|127
