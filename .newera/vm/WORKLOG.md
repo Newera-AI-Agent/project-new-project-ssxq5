@@ -108,3 +108,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-02T01:04:39.644Z | VM 10/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== gen index.ts 1-225 ==='; sed -n '1,225p' gen.pollinations.ai/
 - [2026-11-02T01:37:24.062Z | VM 10/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== [1] execute-generation.ts (handoff route) ==='; cat -n gen.po
 - [2026-11-02T01:44:34.398Z | VM 10/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '=== [1] outer: is pollinations a gitlink? ==='; git ls-files -s pollinations; 
+- [2026-11-02T01:48:19.245Z | VM 10/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== [1] ban checks in media worker ==='; grep -rn 'isUserBanned\|
