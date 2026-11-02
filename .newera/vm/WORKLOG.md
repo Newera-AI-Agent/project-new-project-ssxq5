@@ -124,3 +124,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-02T04:34:45.114Z | VM 11/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### enter vitest.config.ts (head 120)'; sed -n '1,120p' enter.p
 - [2026-11-02T04:48:31.491Z | VM 11/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### gen vitest.config.ts'; cat gen.pollinations.ai/vitest.confi
 - [2026-11-02T05:12:10.745Z | VM 11/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### pool workers installed?'; ls node_modules/@cloudflare/ 2>/d
+- [2026-11-02T05:40:19.680Z | VM 11/3] RELAY checkpoint at step 130 — handoff committed, VM 12 continues.
