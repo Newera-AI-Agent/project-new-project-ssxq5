@@ -131,3 +131,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-02T06:22:25.169Z | VM 12/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5 && echo '########## outer .gitignore'; cat .gitignore; echo '########## install state';
 - [2026-11-02T06:28:53.545Z | VM 12/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## api-key.ts 1-230'; sed -n '1,230p' shared/auth/api-key
 - [2026-11-02T07:01:04.454Z | VM 12/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## INSTALL STATE'; ls -d node_modules 2>/dev/null && ls n
+- [2026-11-02T07:08:26.739Z | VM 12/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## shared/rate-limit.ts'; cat -n shared/rate-limit.ts; ec
