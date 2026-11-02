@@ -103,3 +103,4 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-01T23:02:03.559Z | VM 10/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### takeHandoff grep'; grep -rn 'takeHandoff' --include=*.ts . 
 - [2026-11-01T23:21:19.794Z | VM 10/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### shared/auth/ban.ts'; cat -n shared/auth/ban.ts; echo; echo 
 - [2026-11-02T00:12:44.528Z | VM 10/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### bin'; ls node_modules/.bin | grep -iE 'vitest|wrangler' ; e
+- [2026-11-02T00:33:55.067Z | VM 10/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '=== install state ==='; ls -d node_modules 2>/dev/null || echo 'N
