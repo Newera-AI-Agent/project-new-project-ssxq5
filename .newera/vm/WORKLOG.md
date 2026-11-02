@@ -135,3 +135,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-02T07:43:19.679Z | VM 12/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## docs.ts: fetch calls + spec build'; grep -n 'fetch\|EN
 - [2026-11-02T08:48:38.272Z | VM 12/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## shared/rate-limit.ts'; cat -n shared/rate-limit.ts; ec
 - [2026-11-02T08:59:24.859Z | VM 12/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## pool workers installed?'; ls node_modules/@cloudflare/
+- [2026-11-02T09:20:08.504Z | VM 12/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '########## node_modules state'; ls -d node_modules gen.pollinatio
+- [2026-11-02T09:20:08.860Z | VM 12/3] RELAY checkpoint at step 53 — handoff committed, VM 13 continues.
