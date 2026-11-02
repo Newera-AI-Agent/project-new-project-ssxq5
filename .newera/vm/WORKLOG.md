@@ -125,3 +125,5 @@ Durable session memory for this VM job chain. Each line is one step or wind-down
 - [2026-11-02T04:48:31.491Z | VM 11/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### gen vitest.config.ts'; cat gen.pollinations.ai/vitest.confi
 - [2026-11-02T05:12:10.745Z | VM 11/3] VERIFIED green: cd /home/runner/work/project-new-project-ssxq5/project-new-project-ssxq5/pollinations && echo '##### pool workers installed?'; ls node_modules/@cloudflare/ 2>/d
 - [2026-11-02T05:40:19.680Z | VM 11/3] RELAY checkpoint at step 130 — handoff committed, VM 12 continues.
+- [2026-11-02T05:40:35.485Z | VM 12/3] boot: VM 12/3 online (job vm-mvytyap2-ig5o82my, 240 min budget, relay continuation)
+- [2026-11-02T05:40:35.486Z | VM 12/3] self-check PASS: shell: VERIFIED (the harness executed bash on this VM at boot); node: v24.22.1; npm: 11.19.1; python3: Python 3.12.3; git: repo checked out @ 4eba4de; browser: Google Chrome 156.0.8078.47 available — the browser_* tools drive it (playwright-core installs on first browser call); filesystem: WRITABLE 
